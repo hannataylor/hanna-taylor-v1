@@ -1,62 +1,27 @@
 <footer>
-  <div class="page-footer black hide-on-med-and-down">
+  <div class="page-footer black">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="footer-heading white-text">Contact Me</h5>
-          <ul class="contact-list grey-text text-lighten-4">
-            <li> <a href="mailto:{{ site.email }}"><i class="fa fa-envelope white-text" aria-hidden="true"></i> {{ site.email }}</a></li>
-            <li><i class="fa fa-phone white-text" aria-hidden="true"></i>  301-712-6539</li>
-            <li><i class="fa fa-map-marker white-text" aria-hidden="true"></i>  New York, NY</li>
-          </ul>
+
+        <div class="col l12 s12">
+          <h6 class="white-text center emphasis">Copyright © 2016, Created by Hanna Taylor</h6>
         </div>
 
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-
-          {% if site.linkedin_username %}
-          <li>
+        <div class="col l12 s12">
+          <div class="social-media-list white-text center">
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github small footer-icon"></i>
+            </a>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter small footer-icon"></i>
+            </a>
             <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-              <i class="fa fa-linkedin white-text"></i> hannataylor
+              <i class="fa fa-linkedin small footer-icon"></i>
             </a>
-          </li>
-          {% endif %}
-
-          {% if site.instagram_username %}
-          <li>
             <a href="https://instagram.com/{{ site.instagram_username }}">
-              <i class="fa fa-instagram white-text" aria-hidden="true"></i> hanna__taylor
+              <i class="fa fa-instagram small footer-icon" aria-hidden="true"></i>
             </a>
-          </li>
-          {% endif %}
-
-        </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="page-footer hide-on-large-only black">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="footer-heading white-text">{{ site.title }}</h5>
-          <ul class="contact-list grey-text text-lighten-4">
-            <li> <a href="mailto:{{ site.email }}"><i class="fa fa-envelope white-text" aria-hidden="true"></i> {{ site.email }}</a></li>
-            <li><i class="fa fa-phone white-text" aria-hidden="true"></i>  301-712-6539</li>
-            <li><i class="fa fa-map-marker white-text" aria-hidden="true"></i>  New York, NY</li>
-          </ul>
+          </div >
         </div>
       </div>
     </div>

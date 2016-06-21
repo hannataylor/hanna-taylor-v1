@@ -15,14 +15,19 @@ footer a {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -5.5em; /* the bottom margin is the negative value of the footer's height */
 }
-
 .page-footer, .push {
-  height: 11em; /* .push must be the same height as .footer */
+  height: 5.5em; /* .push must be the same height as .footer */
 }
 
 .header-image {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-image {
+  top: 0;
   width: 100%;
   height: auto;
 }
@@ -117,6 +122,11 @@ footer a {
   -webkit-align-self: auto; /* Safari */
   align-self:         auto;
 }
+
+.footer-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /* Font Customization */
 
 .underline {
@@ -135,4 +145,8 @@ footer a {
 
 a {
   color: inherit;
+}
+
+.bigger {
+  font-size: 125%;
 }
