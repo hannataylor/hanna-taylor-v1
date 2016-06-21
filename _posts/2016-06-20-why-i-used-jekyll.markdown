@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Thoughts on Jekyll"
+title:  "Why I Used Jekyll"
 date:   2016-06-20 23:05:05 -0400
 categories: jekyll
 ---
