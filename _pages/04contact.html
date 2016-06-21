@@ -5,20 +5,57 @@ permalink: /contact/
 ---
 
 <div class="container">
-    <div class="section">
-      <h2 class="underline emphasis">Contact Me</h2>
-      <div class="row">
-        <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </div>
+  <div class="section">
+    <h2 class="underline emphasis">Contact Me</h2>
+      <div class="container">
+        <div class="row">
+          <p class="bigger center">Feel free to contact me if you'd like to work together on a project or know of any job opportunities. I'd love to chat!</p><br>
 
-        <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </div>
+          <div class="col l6 s12">
+            <ul class="contact-list">
+              <li> <a href="mailto:{{ site.email }}"><i class="fa fa-envelope xsmall" aria-hidden="true"></i> {{ site.email }}</a></li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>  301-712-6539</li>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i>  New York, NY</li>
+            </ul>
+          </div>
 
-        <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <div class="col l4 offset-l2 s12">
+            <ul class="social-media-list">
+              {% if site.github_username %}
+              <li>
+                <a href="https://github.com/{{ site.github_username }}">
+                <i class="fa fa-github"></i> hannataylor
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.twitter_username %}
+              <li>
+                <a href="https://twitter.com/{{ site.twitter_username }}">
+                  <i class="fa fa-twitter"></i> hanna__taylor
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.linkedin_username %}
+              <li>
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+                  <i class="fa fa-linkedin"></i> hannataylor
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.instagram_username %}
+              <li>
+                <a href="https://instagram.com/{{ site.instagram_username }}">
+                  <i class="fa fa-instagram" aria-hidden="true"></i> hanna__taylor
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

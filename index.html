@@ -14,7 +14,9 @@ layout: default
         </div>
 
         <div class="col s12 m6 l8">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Hi! I'm Hanna and I'm a Full Stack Web Developer living in New York City.</p><br>
+          <p>I love working in Ruby in Rails and everything that back end web development entails, and I also love design and working in HTML/CSS with JavaScript/jQuery and making the back end come to life.</p><br>
+          <p>I'm always looking to improve my skills. I learned Ruby, Ruby on Rails, Javascript, and HTML/CSS in just a few months, so I'm excited to see what I put my mind to next...PHP and Scala are definitely next on the to-learn list.</p>
         </div>
       </div>
     </div>
@@ -49,7 +51,7 @@ layout: default
             </div>
             <div class="section">
               <h6 class="emphasis">Travel Overflow</h6>
-              <p>A Stack Overflow clone, built in Rails where users can ask travel related questions, answer questions, and comment on questions, answers, and other comments.
+              <p>A Stack Overflow clone, built in Ruby and Sinatra where users can ask travel related questions, answer questions, and comment on questions, answers, and other comments.
               </p>
             </div>
 
@@ -154,15 +156,28 @@ layout: default
       <h2 class="underline emphasis">Projects</h2>
       <div class="row">
         <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <video class="responsive-video" controls>
+            <source src="{{site.baseurl}}/images/localeyes.mp4" type="video/mp4">
+          </video>
+          <h6 class="emphasis center bigger">Localeyes</h6>
+          <p class="center">Localeyes is an app that connects tourists to day trips curated by locals. Localeyes is built in Rails and utilizes the Google Maps and Google Places API. I worked a lot on front end, implementing Materialize CSS, a framework based on Google's Material Design philosophy. In addition to front end, I created other features on the back end, such as favorites, "been there", "available for tours", and mutual followers.</p>
+          <p class="center emphasis"><a href="localeyestrips.com">localeyestrips.com</a></p>
         </div>
 
         <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <video class="responsive-video" controls>
+            <source src="{{site.baseurl}}/images/potluckr.mp4" type="video/mp4">
+          </video>
+          <h6 class="emphasis center bigger">Potluckr</h6>
+          <p class="center">Web application built in Rails to facilitate Potluck event planning where users can host a potluck, and invited users can mark themselves as attending and sign up for items to bring. Built in a weekend as a fun side project to teach myself Rails as well as Bootstrap.</p>
         </div>
 
         <div class="col s12 m6 l4">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <video class="responsive-video" controls>
+            <source src="{{site.baseurl}}/images/traveloverflow.mp4" type="video/mp4">
+          </video>
+          <h6 class="emphasis center bigger">Travel Overflow</h6>
+          <p class="center">A Stack Overflow clone, built in Ruby and Sinatra where users can ask travel related questions, answer questions, and comment on questions, answers, and other comments.</p>
         </div>
       </div>
     </div>
@@ -175,12 +190,57 @@ layout: default
   </div>
 </div>
 
-<div class="facts">
+<div class="contact">
   <div class="container">
     <div class="section">
-      <h2 class="underline emphasis">Fun Facts</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <br>
+      <h2 class="underline emphasis">Contact</h2>
+       <div class="container">
+      <div class="row">
+          <p class="bigger center">Feel free to contact me if you'd like to work together on a project or know of any job opportunities. I'd love to chat!</p><br>
+        <div class="col l6 s12">
+          <ul class="contact-list">
+            <li> <a href="mailto:{{ site.email }}"><i class="fa fa-envelope xsmall" aria-hidden="true"></i> {{ site.email }}</a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>  301-712-6539</li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>  New York, NY</li>
+          </ul>
+        </div>
+
+        <div class="col l4 offset-l2 s12">
+          <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github"></i> hannataylor
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i> hanna__taylor
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fa fa-linkedin"></i> hannataylor
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.instagram_username %}
+          <li>
+            <a href="https://instagram.com/{{ site.instagram_username }}">
+              <i class="fa fa-instagram" aria-hidden="true"></i> hanna__taylor
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+        </div>
     </div>
   </div>
 </div>
