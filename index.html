@@ -2,7 +2,14 @@
 layout: default
 ---
 <script src="{{site.baseurl}}/js/parallax.js"></script>
+
+<div class="hide-on-med-and-down">
   {% include header-image.html %}
+</div>
+
+<div class="hide-on-large-only">
+  {% include mobile-header.html %}
+</div>
 
 <div class="about-me">
   <div class="container">
@@ -25,9 +32,10 @@ layout: default
 
 
 <div class="parallax-container">
-  <div class="parallax">
+  <div class="parallax hide-on-med-and-down">
     <img src="{{site.baseurl}}/images/03.jpg" alt="parallax-image" class="parallax-image responsive-img">
   </div>
+  <img src="{{site.baseurl}}/images/m03.jpg" alt="header-image" class="responsive-img hide-on-large-only">
 </div>
 
 <div class="projects">
@@ -68,9 +76,10 @@ layout: default
 
 
 <div class="parallax-container middle-parallax">
-  <div class="parallax">
+  <div class="parallax hide-on-med-and-down">
     <img src="{{site.baseurl}}/images/05.jpg" alt="parallax-image" class="parallax-image responsive-img">
   </div>
+  <img src="{{site.baseurl}}/images/m05.jpg" alt="header-image" class="responsive-img hide-on-large-only">
 </div>
 
 <div class="resume">
@@ -186,9 +195,10 @@ layout: default
 </div>
 
 <div class="parallax-container bottom-parallax">
-  <div class="parallax">
+  <div class="parallax hide-on-med-and-down">
     <img src="{{site.baseurl}}/images/06.jpg" alt="parallax-image" class="parallax-image responsive-img">
   </div>
+  <img src="{{site.baseurl}}/images/m06.jpg" alt="header-image" class="responsive-img hide-on-large-only">
 </div>
 
 <div class="contact">
