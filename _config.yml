@@ -10,7 +10,7 @@ title: Hanna Taylor
 email: hanna.taylor@icloud.com
 description: Full Stack Web Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hanna-taylor.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: hanna__taylor
 github_username:  hannataylor
 linkedin_username: hannataylor

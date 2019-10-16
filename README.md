@@ -1,4 +1,3 @@
-# hanna-taylor.com
 ## Personal Resume/Portfolio Website
 
 Built using Jekyll, a simple, blog-aware, static site generator in Ruby.
